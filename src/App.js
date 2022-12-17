@@ -1,9 +1,9 @@
 import React from "react";
-import Counter from "./React-JS";
+import ModalPage from "./React-Modal";
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <ModalPage />
     </div>
   );
 }
