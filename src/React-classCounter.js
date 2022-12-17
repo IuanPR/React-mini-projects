@@ -1,5 +1,5 @@
 import React from "react";
-// Counter
+// Counter on the class component
 class Counter extends React.Component {
   constructor(props) {
     super(props);
@@ -7,18 +7,15 @@ class Counter extends React.Component {
       counter: 0,
     };
   }
+
   CounterMinus() {
-    let num = this.state.counter;
-    num--;
     this.setState({
-      counter: num,
+      counter: this.state.counter - 1,
     });
   }
   CounterPlus() {
-    let num = this.state.counter;
-    num++;
     this.setState({
-      counter: num,
+      counter: this.state.counter + 1,
     });
   }
   render() {
