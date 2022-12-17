@@ -7,27 +7,24 @@ body {
   list-style-position: inside;
   width: 100%;
 }
-.counter {
-  padding: auto;
-  margin: auto;
+.parent-block {
   margin-top: 1%;
-  width: min-content;
 }
-.counter-minus {
-  background-color: rgb(220, 81, 81);
+.parent-block button {
+  background-color: cadetblue;
+  color: azure;
   border-style: none;
-  border-radius: 22%;
-  height: 3rem;
-  width: 5rem;
+  height: 2rem;
+  width: 8rem;
 }
-.counter-plus {
-  background-color: rgb(80, 227, 80);
-  border-radius: 22%;
-  border-style: none;
-  height: 3rem;
-  width: 5rem;
+.overlay {
+  margin-top: 2rem;
 }
-.buttons {
-  display: flex;
-  gap: 0.5rem;
+.modal {
+  margin: auto;
+  border: 1px groove;
+  height: 130px;
+  width: 400px;
+  color: azure;
+  background-color: #6e9cef;
 }
