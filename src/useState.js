@@ -2,11 +2,16 @@ import React from "react";
 function Counter() {
   const [counter, setCounter] = React.useState(0);
   function CounterMinus() {
-    setCounter(counter - 1);
+    if (counter > 0) {
+      setCounter(counter - 1);
+    } else {
+      setCounter(counter + 0);
+    }
   }
   function CounterPlus() {
     setCounter(counter + 1);
   }
+
   return (
     <div>
       <h1>Counter:</h1>

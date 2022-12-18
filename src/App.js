@@ -1,6 +1,5 @@
 import React from "react";
-// import Counter from "./React-funcCounter";
-import Counter from "./React-classCounter";
+import Counter from "./useState";
 function App() {
   return (
     <div className="App">
