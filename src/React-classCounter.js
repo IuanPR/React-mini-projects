@@ -9,9 +9,15 @@ class Counter extends React.Component {
   }
 
   CounterMinus() {
-    this.setState({
-      counter: this.state.counter - 1,
-    });
+    if (this.state.counter > 0) {
+      this.setState({
+        counter: this.state.counter - 1,
+      });
+    } else {
+      this.setState({
+        counter: this.state.counter + 0,
+      });
+    }
   }
   CounterPlus() {
     this.setState({
