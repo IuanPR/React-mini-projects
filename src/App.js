@@ -1,9 +1,9 @@
 import React from "react";
-import Counter from "./React-JS";
+import Quiz from "./Quiz";
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <Quiz />
     </div>
   );
 }
