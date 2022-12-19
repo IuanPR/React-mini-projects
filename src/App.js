@@ -1,10 +1,9 @@
 import React from "react";
-import Counter from "./useState";
-import Effect from "./useEffect";
+import Quiz from "./Quiz";
 function App() {
   return (
     <div className="App">
-      <Effect />
+      <Quiz />
     </div>
   );
 }
