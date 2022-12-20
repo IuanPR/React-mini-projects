@@ -1,9 +1,9 @@
 import React from "react";
-import Quiz from "./Quiz";
+import Guests from "./Guests";
 function App() {
   return (
     <div className="App">
-      <Quiz />
+      <Guests />
     </div>
   );
 }

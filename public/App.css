@@ -1,98 +1,49 @@
 body {
-  margin: 0;
-  font-family: "Nunito", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: blueviolet;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background-color: cadetblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .App {
-  width: 500px;
-  border-radius: 30px;
-  padding: 40px;
-  background-color: #fff;
-  position: relative;
+  margin: auto;
+  margin-top: 2%;
+  background-color: azure;
+  height: 40rem;
+  width: 22rem;
+  border-radius: 2rem;
 }
-.App .result {
-  text-align: center;
-}
-.App .result button {
-  font-weight: bold;
-  font-family: "Nunito", sans-serif;
-  border-radius: 30px;
-  border: 0;
-  padding: 15px 30px;
-  font-size: 20px;
-  background-color: #f00067;
-  color: #fff;
-  margin-top: 20px;
-  cursor: pointer;
-}
-.App .result h2 {
-  margin-bottom: 0;
-}
-.App .result img {
-  width: 150px;
-}
-.App .progress {
-  height: 10px;
-  border-radius: 30px;
-  background-color: #e8e8e8;
-  margin-bottom: 25px;
-}
-.App .progress__inner {
+.main-component {
   height: 100%;
-  border-radius: 30px;
-  width: 80%;
-  background: #12e730;
-  transition: all 0.3s ease-in-out;
-  background: linear-gradient(
-    90deg,
-    rgba(18, 231, 48, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  display: flex;
+  flex-direction: column;
 }
-.App:before,
-.App:after {
-  content: "";
-  display: block;
-  height: 50px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.Search-parent {
+  width: 100%;
+  height: 4rem;
+  display: flex;
 }
-.App:before {
-  width: 95%;
-  bottom: -10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 0;
+.Search-parent input {
+  border: 1px solid rgb(203, 203, 203);
+  background-color: azure;
+  outline: none;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 2rem;
+  margin: 1rem;
 }
-.App:after {
-  width: 90%;
-  bottom: -20px;
-  background-color: rgba(255, 255, 255, 0.3);
-  z-index: 1;
+.sendinvite-parent {
+  height: 4rem;
+  width: auto;
+  display: flex;
 }
-.App h1 {
-  margin: 0;
+.sendinvite-parent button {
+  margin: 0.7rem;
+  width: 20rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: orange;
+  border-style: none;
+  border-radius: 0.5rem;
 }
-.App ul {
-  list-style: none;
-  padding: 0;
-}
-.App ul li {
-  padding: 15px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: all 0.1s ease-in-out;
-}
-.App ul li:hover {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+.Users {
+  width: auto;
+  height: 32rem;
 }
