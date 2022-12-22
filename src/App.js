@@ -1,12 +1,13 @@
 import React from "react";
 import Counter from "./useState";
 import Effect from "./useEffect";
-function App() {
+import Ref from "./useRef";
+export default function App() {
   return (
     <div className="App">
-      <Effect />
+      <Ref />
+      {/* <Effect /> */}
+      {/* <Counter /> */}
     </div>
   );
 }
-
-export default App;
