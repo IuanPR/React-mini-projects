@@ -31,3 +31,10 @@ body {
   display: flex;
   gap: 0.5rem;
 }
+.users {
+  margin-right: 50%;
+  text-align: left;
+  overflow: scroll;
+  height: 50rem;
+  width: 40rem;
+}
