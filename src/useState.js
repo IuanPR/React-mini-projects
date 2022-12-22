@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-function Counter() {
+export default function Counter() {
   const [counter, setCounter] = useState(0);
   function CounterMinus() {
     if (counter > 0) {
@@ -33,4 +33,3 @@ function Counter() {
     </div>
   );
 }
-export default Counter;

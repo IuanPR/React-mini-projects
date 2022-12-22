@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-function Effect() {
+export default function Effect() {
   const [type, setType] = useState("users");
   const [data, setData] = useState([]);
   const [pos, setPos] = useState({
@@ -20,8 +20,16 @@ function Effect() {
       });
     });
   });
+  const [time, setTime] = useState(new Date());
+  const CurrentTime = () => {
+    return setTime(new Date());
+  };
+  useEffect(() => {
+    setInterval(CurrentTime(), 1000);
+  });
   return (
     <div>
+      <h2>Сечас время {time.toLocaleTimeString()}</h2>
       <h1>Тип: {type}</h1>
       <button onClick={() => setType("users")}>Пользователи</button>
       <button onClick={() => setType("todos")}>ToDo</button>
@@ -34,4 +42,3 @@ function Effect() {
     </div>
   );
 }
-export default Effect;
