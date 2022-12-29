@@ -1,11 +1,6 @@
 import React from "react";
-import Counter from "./React-JS";
-function App() {
-  return (
-    <div className="App">
-      <Counter />
-    </div>
-  );
+import MainContent from "./MainContent";
+import "./Style.css";
+export default function App() {
+  return <MainContent />;
 }
-
-export default App;
