@@ -1,0 +1,2 @@
+It isn't my App.css being used here
+If you have problems with "module not found: error: can't resolve 'react-content-loader'", Install "npm i react-content-loader --save"
