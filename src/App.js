@@ -8,8 +8,8 @@ export default function App() {
     <div className="App">
       {/* <Ref /> */}
       {/* <Effect /> */}
-      {/* <Counter /> */}
-      <Reducer />
+      <Counter />
+      {/* <Reducer /> */}
     </div>
   );
 }

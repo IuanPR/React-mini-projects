@@ -2,13 +2,6 @@ import { useState } from "react";
 import React from "react";
 export default function Counter() {
   const [counter, setCounter] = useState(0);
-  function CounterMinus() {
-    if (counter > 0) {
-      setCounter(counter - 1);
-    } else {
-      setCounter(counter);
-    }
-  }
   return (
     <div>
       <h1>Counter:</h1>
@@ -16,7 +9,12 @@ export default function Counter() {
         <h1>{counter}</h1>
         <div className="buttons">
           <div>
-            <button className="counter-minus" onClick={() => CounterMinus()}>
+            <button
+              className="counter-minus"
+              onClick={() =>
+                counter > 0 ? setCounter(counter - 1) : setCounter(counter)
+              }
+            >
               Minus
             </button>
           </div>
